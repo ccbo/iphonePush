@@ -79,7 +79,7 @@
 - (void)sendMessage:(id)sender
 {
     NSString *userFilePath = [[NSBundle mainBundle] pathForResource:@"userCert" ofType:@"pem"];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:userFilePath]) {
+    if (!userFilePath) {
         UIAlertView *alter = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请把你的证书（命名为userCert.pem）加入到工程中，重新编译" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
         [alter show];
         return;
