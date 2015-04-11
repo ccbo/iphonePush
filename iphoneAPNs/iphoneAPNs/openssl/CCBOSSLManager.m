@@ -8,8 +8,8 @@
 
 #import "CCBOSSLManager.h"
 #import <openssl/ssl.h>
-#import <OpenSsl/x509.h>
-#import <Openssl/x509v3.h>
+#import <openssl/x509.h>
+#import <openssl/x509v3.h>
 #import <openssl/pkcs12.h>
 #import <openssl/err.h>
 
@@ -96,7 +96,7 @@ static id sharedInstance = nil;
 int np_socket_alive(int sock)
 {
     char buff[32];
-    int recv_buff = recv(sock, buff, sizeof (buff), MSG_PEEK);
+    int recv_buff = (int)recv(sock, buff, sizeof (buff), MSG_PEEK);
     int sockErr = errno;
     if (recv_buff > 0)  // Get Data
         return 1;
