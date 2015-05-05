@@ -22,6 +22,8 @@
 		4AD51FA51ACE30290027D374 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD51FA01ACE2F520027D374 /* libcrypto.a */; };
 		4AD51FAD1ACE379B0027D374 /* rootCert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4AD51FAB1ACE379B0027D374 /* rootCert.pem */; };
 		4AD51FAE1ACE379B0027D374 /* rootCert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4AD51FAB1ACE379B0027D374 /* rootCert.pem */; };
+		4AECD3E31AF868C600C8E696 /* userCert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4AECD3E21AF868C600C8E696 /* userCert.pem */; };
+		4AECD3E41AF868C600C8E696 /* userCert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4AECD3E21AF868C600C8E696 /* userCert.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		4AD51FA01ACE2F520027D374 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/libcrypto.a; sourceTree = "<group>"; };
 		4AD51FA11ACE2F520027D374 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = openssl/libssl.a; sourceTree = "<group>"; };
 		4AD51FAB1ACE379B0027D374 /* rootCert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rootCert.pem; sourceTree = "<group>"; };
+		4AECD3E21AF868C600C8E696 /* userCert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = userCert.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,7 @@
 		4AD51FAA1ACE379B0027D374 /* cert */ = {
 			isa = PBXGroup;
 			children = (
+				4AECD3E21AF868C600C8E696 /* userCert.pem */,
 				4AD51FAB1ACE379B0027D374 /* rootCert.pem */,
 			);
 			path = cert;
@@ -228,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD51FAD1ACE379B0027D374 /* rootCert.pem in Resources */,
+				4AECD3E31AF868C600C8E696 /* userCert.pem in Resources */,
 				4AD51F811ACE29140027D374 /* LaunchScreen.xib in Resources */,
 				4AD51F7E1ACE29140027D374 /* Images.xcassets in Resources */,
 			);
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD51FAE1ACE379B0027D374 /* rootCert.pem in Resources */,
+				4AECD3E41AF868C600C8E696 /* userCert.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +478,7 @@
 				4AD51F921ACE29140027D374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AD51F931ACE29140027D374 /* Build configuration list for PBXNativeTarget "iphoneAPNsTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				4AD51F951ACE29140027D374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
